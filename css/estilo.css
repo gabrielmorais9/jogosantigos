@@ -1,0 +1,39 @@
+
+.imgp{
+    height: auto;
+    width: 150px;
+}
+.imgm{
+    height: auto;
+    width: 250px;
+}
+.imgg{
+    height: auto;
+    width: 500px;
+}
+body {
+    background: url(../img/fundo.jpg) no-repeat center/cover;
+  font-family: 'Roboto', sans-serif ;
+  cursor: url(../html/cursor/Normal\ select.cur),auto;
+  margin: 20px;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color:rgb(76, 0, 255);
+}
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color:rgb(0, 115, 247);
+}
+p {
+  font-family: 'Roboto', sans-serif ;
+  color:gainsboro;
+  font-size: 16px;
+}
+a{
+    color:deepskyblue;
+    cursor: url(../html/cursor/Link\ select.cur),auto;
+}
+text {
+    cursor: url(../html/cursor/Text\ select.cur),auto;
+}
