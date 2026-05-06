@@ -1,0 +1,21 @@
+ body {
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza texto */
+    font-family: Arial; /* Fonte */
+  }
+
+  canvas {
+    background: black; /* Fundo do jogo */
+    display: block; /* Permite centralizar */
+    margin: auto; /* Centraliza na tela */
+    border: 3px solid yellow; /* Borda amarela */
+  }
+
+  #ui {
+    margin-top: 10px; /* Espaço acima */
+  }
+
+  button {
+    padding: 10px 20px; /* Tamanho do botão */
+    cursor: pointer; /* Muda o cursor */
+  }

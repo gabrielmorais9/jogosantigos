@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head>
+<meta charset="UTF-8"> 
+<title>Pac-Man</title> 
+
+<link rel="icon" type="image/x-icon" href="../img/lkk.png"> 
+<link rel="stylesheet" href="../css/estilo.css"> 
+<link rel="stylesheet" href="../css/pac.css"> 
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+      <h1 class="logo">Pac-Man</h1>
+
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="pac.html">Pac-Man</a></li>
+        <li><a href="pv.html">Chat Privado</a></li>
+        <li><a href="chat.html">Chat Global</a></li>
+        <li><a href="creditos.html">Créditos</a></li>
+      </ul>
+    </nav>
+  </header>
+<h1>Pac-Man </h1> 
+
+<canvas id="game" width="420" height="420"></canvas> <!-- Área do jogo -->
+
+<div id="ui"> <!-- Interface -->
+  <p>Pontos: <span id="score">0</span></p> <!-- Mostra pontuação -->
+  <button onclick="restart()">Reiniciar</button> <!-- Botão de reiniciar -->
+</div>
+
+<script src="../java/pac.js"></script>
+
+</body>
+</html>

@@ -15,28 +15,69 @@ body {
     background: url(../img/fundo.jpg) no-repeat center/cover;
   font-family: 'Roboto', sans-serif ;
   cursor: url(../html/cursor/Normal\ select.cur),auto;
-  margin: 20px;
+  /* Animação */
+  opacity: 0;
+  animation: entrar 1s ease forwards;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 h1 {
   font-family: 'Orbitron', sans-serif;
   color:rgb(76, 0, 255);
+    margin: 20px;
+
 }
 h2 {
   font-family: 'Orbitron', sans-serif;
   color:rgb(0, 115, 247);
+    margin: 20px;
+
 }
 p {
   font-family: 'Roboto', sans-serif ;
   color:gainsboro;
   font-size: 20px;
+    margin: 20px;
 }
+button {
+  font-family: 'Roboto', sans-serif ;
+  color:rgb(255, 255, 255);
+  background-color: rgb(0, 115, 247);
+  border: none;
+  padding: 10px 20px;
+  cursor: url(../html/cursor/Precision\ select.cur),auto;
+    margin: 20px;
+}
+div {
+    cursor: url(../html/cursor/Normal\ select.cur),auto;
+}
+#lii{
+  margin: 20px;
+}
+
 a{
   font-size: 20px;
     color:deepskyblue;
     cursor: url(../html/cursor/Link\ select.cur),auto;
+      margin: 20px;
+
 }
-text {
-    cursor: url(../html/cursor/Text\ select.cur),auto;
+input, textarea {
+  cursor: url("../html/cursor/Text\ select.cur"), text;
+}
+button:hover {
+  cursor: url("../html/cursor/Link\ select.cur"), pointer !important;
 }
 .centralizada {
   display: block;
@@ -44,4 +85,44 @@ text {
 }
 .borda {
   border: 2px solid rgb(253, 253, 253);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #111;
+  padding: 15px 30px;
+
+  position: sticky; /* deixa a barra fixa */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #00ff88;
 }

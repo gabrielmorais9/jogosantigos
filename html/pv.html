@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Chat Privado</title>
+    <link rel="icon" type="image/x-icon" href="../img/lkk.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/pv.css">
+
+</head>
+
+<body>
+
+<div id="loginScreen">
+  <h2>Login</h2>
+  <input id="email" placeholder="email"><br><br>
+  <input id="pass" type="password" placeholder="senha"><br><br>
+  <button onclick="login()">Entrar</button>
+  <button onclick="register()">Criar conta</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none; width:100%; height:100%;">
+
+  <div id="left">
+    <h3>Usuários</h3>
+    <div id="users"></div>
+  </div>
+
+  <div id="right">
+    <div id="chat"></div>
+
+    <div id="inputArea">
+      <input id="msg" placeholder="mensagem...">
+      <button onclick="sendMsg()">Enviar</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script src="../java/pv.js"></script>
+</body>
+</html>

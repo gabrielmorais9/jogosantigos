@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: url('../img/fundo.jpg') no-repeat center/cover;
+  color: rgb(255, 252, 252);
+  display: flex;
+  height: 100vh;
+}
+
+#left {
+  width: 30%;
+  background: url('../img/fdc.jfif') no-repeat center/cover;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  padding: 10px;
+  background: #1b1818;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.user:hover {
+  background: #51418d;
+}
+
+#chat {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#inputArea {
+  display: flex;
+}
+
+#msg {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+.msg {
+  background: #000000;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+}
