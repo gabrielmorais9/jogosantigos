@@ -28,12 +28,20 @@ h2 {
 p {
   font-family: 'Roboto', sans-serif ;
   color:gainsboro;
-  font-size: 16px;
+  font-size: 20px;
 }
 a{
+  font-size: 20px;
     color:deepskyblue;
     cursor: url(../html/cursor/Link\ select.cur),auto;
 }
 text {
     cursor: url(../html/cursor/Text\ select.cur),auto;
+}
+.centralizada {
+  display: block;
+  margin: 0 auto;
+}
+.borda {
+  border: 2px solid rgb(253, 253, 253);
 }
