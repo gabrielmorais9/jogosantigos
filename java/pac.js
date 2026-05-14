@@ -134,11 +134,11 @@ function moveGhost() {
   let stepY = dy > 0 ? 1 : -1; // Decide direção Y
 
   if (!isWall(ghost.x + stepX * 2, ghost.y)) {
-    ghost.x += stepX * 1.5; // Move no eixo X
+    ghost.x += stepX * 1; // Move no eixo X
   }
 
   if (!isWall(ghost.x, ghost.y + stepY * 2)) {
-    ghost.y += stepY * 1.5; // Move no eixo Y
+    ghost.y += stepY * 1; // Move no eixo Y
   }
 }
 
@@ -147,7 +147,7 @@ function checkCollision() {
   let dist = Math.hypot(pacman.x - ghost.x, pacman.y - ghost.y);
   if (dist < 15) {
     gameOver = true; // Encerra jogo
-    alert("💀 Game Over!");
+    alert(" Game Over!");
   }
 }
 
