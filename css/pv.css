@@ -23,7 +23,23 @@ body {
   display: flex;
   flex-direction: column;
 }
+#loginScreen{
+   background: rgba(0, 0, 0, 0.75);
 
+    width: 95%;
+    max-width: 900px;
+
+    margin: 40px auto;
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 0 20px rgba(0, 115, 247, 0.5);
+}
 .user {
   padding: 10px;
   background: #1b1818;
